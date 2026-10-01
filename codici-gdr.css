@@ -3,8 +3,8 @@
 .school-inner{width:100%;padding:0 0 24px;background:#1A0A24;box-sizing:border-box}
 
 /* HEADER */
-.school-header{position:relative;min-height:230px;padding:55px 50px 40px;background:linear-gradient(180deg,rgba(58,26,64,.05),rgba(26,10,36,.78)),url('https://i.imgur.com/FkxLwzp.png') center/cover no-repeat;box-sizing:border-box}
-.school-header-title{margin:0;color:#F6E6E0;font:500 clamp(42px,7vw,78px)/.95 'Cormorant Garamond',serif;letter-spacing:.01em}
+.school-header{position:relative;min-height:230px;padding:55px 50px 40px;background:url('https://i.imgur.com/FkxLwzp.png') center/cover no-repeat;box-sizing:border-box}
+.school-header-title{margin:0;color:#F6E6E0;font:500 clamp(42px,7vw,78px)/.95 'Bodoni Moda',serif;letter-spacing:.01em}
 .school-header-subtitle{margin-top:8px;color:#F6E6E0;font:300 clamp(20px,3vw,34px)/1 Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase}
 .school-header-line{width:55%;height:1px;margin:18px 0 10px;background:#E8B4B0}
 .school-header-text{color:#F6E6E0;font:500 11px/1.5 Montserrat,sans-serif;letter-spacing:.28em;text-transform:uppercase}
