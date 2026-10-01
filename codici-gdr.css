@@ -3,7 +3,7 @@
 .school-inner{width:100%;padding:0 0 24px;background:#1A0A24;box-sizing:border-box}
 
 /* HEADER */
-.school-header{position:relative;min-height:230px;padding:55px 50px 40px;background:linear-gradient(180deg,rgba(58,26,64,.05),rgba(26,10,36,.78)),url('URL-SFONDO-LOS-ANGELES') center/cover no-repeat;box-sizing:border-box}
+.school-header{position:relative;min-height:230px;padding:55px 50px 40px;background:linear-gradient(180deg,rgba(58,26,64,.05),rgba(26,10,36,.78)),url('https://i.imgur.com/FkxLwzp.png') center/cover no-repeat;box-sizing:border-box}
 .school-header-title{margin:0;color:#F6E6E0;font:500 clamp(42px,7vw,78px)/.95 'Cormorant Garamond',serif;letter-spacing:.01em}
 .school-header-subtitle{margin-top:8px;color:#F6E6E0;font:300 clamp(20px,3vw,34px)/1 Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase}
 .school-header-line{width:55%;height:1px;margin:18px 0 10px;background:#E8B4B0}
@@ -27,21 +27,12 @@
 /* DESCRIZIONE SEZIONE */
 .school-section-info{padding:14px 18px;margin-bottom:16px;background:#F3D9D8;border-radius:9px;color:#3A2230;font:13px/1.5 Montserrat,Arial,sans-serif}
 
+
 /* GRIGLIA CLUB */
-.school-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
-.school-card{background:#FFF7F3;border-radius:10px;overflow:hidden;box-shadow:0 2px 7px rgba(90,31,56,.08);box-sizing:border-box}
-.school-card-title{display:flex;align-items:center;min-height:52px;padding:8px 14px;background:linear-gradient(90deg,#7A2D4A,#A04070);color:#F6E6E0;font:500 21px/1.1 'Cormorant Garamond',serif}
-.school-card-icon{width:36px;min-width:36px;height:36px;margin-right:10px;display:grid;place-items:center;background:#C9485B;border-radius:8px;font-size:19px}
-.school-card-name{flex:1}
-.school-card-type{display:block;margin-top:3px;color:#E8B4B0;font:600 8px/1 Montserrat,sans-serif;letter-spacing:.12em;text-transform:uppercase}
-.school-card-body{padding:13px 14px}
-.school-card-description{margin-bottom:11px;color:#3A2230;font:12px/1.45 Montserrat,Arial,sans-serif}
-.school-card-roles{padding:10px;background:#F3D9D8;border-radius:7px;color:#5A1F38;font:11px/1.55 Montserrat,Arial,sans-serif}
-.school-role{display:block}
-.school-role strong{font-weight:700}
-.school-role a{color:#C9485B!important;text-decoration:none!important}
-.school-role a:hover{color:#7A2D4A!important}
-.school-members{color:#5A1F38}
+.school-grid{display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr)) !important;gap:14px !important;width:100% !important;
+margin:0 0 24px !important;padding:0 !important;box-sizing:border-box !important;align-items:start !important;}
+
+.school-card{display:block !important;width:auto !important;min-width:0 !important;max-width:none !important;margin:0 !important;padding:0 !important;float:none !important;clear:none !important;box-sizing:border-box !important;position:relative !important;}
 
 /* MODULO */
 .school-form{margin-top:20px;padding:18px;background:#2A1030;border-radius:10px;color:#F6E6E0}
