@@ -60,89 +60,559 @@ margin:0 0 24px !important;padding:0 !important;box-sizing:border-box !important
    UCLA UNIVERSITY — LOS ANGELES RPG
    ═══════════════════════════════════════ */
 
-.ucla-page{width:100%;max-width:1000px;margin:0 auto;background:#F5E9E2;color:#160029;font-family:Muli,Arial,sans-serif;box-sizing:border-box;overflow:hidden}
-.ucla-page *{box-sizing:border-box}
+/*============ BASE============ */
+.ucla-page {width: 100%;
+ max-width: 1000px;
+ margin: 0 auto;
+ background: #F6EBE4;
+ color: #4A1A2C;
+ font-family: 'Mulish', 'Muli', Arial, sans-serif;
+ box-sizing: border-box;
+ overflow: hidden;
+ border-bottom: 4px solid #C9A66B;
+ box-shadow: 0 10px 40px rgba(51, 10, 24, 0.35)}
 
-/* HEADER */
-.ucla-hero{height:300px;background:linear-gradient(90deg,rgba(22,0,41,.92),rgba(119,51,68,.35)),url('https://i.imgur.com/03eYpX5.png') center/cover;display:flex;align-items:flex-end;padding:35px;color:#F5E9E2;position:relative}
-.ucla-hero h1{margin:0;font:600 58px/1 'Bodoni Moda',serif;letter-spacing:2px;text-transform:uppercase}
-.ucla-hero small{display:block;margin-top:8px;color:#E3B5A4;font:700 10px Muli;letter-spacing:4px;text-transform:uppercase}
+.ucla-page * {box-sizing: border-box}
 
-/* NAV */
-.ucla-nav{display:flex;gap:7px;padding:10px;background:#160029}
-.ucla-nav a{flex:1;padding:12px 8px;background:#773344;color:#F5E9E2!important;text-decoration:none!important;text-align:center;font:700 9px Muli;text-transform:uppercase;letter-spacing:1px;border-radius:4px;transition:.25s}
-.ucla-nav a:hover{background:#D44D5C;color:#160029!important}
+.ucla-text {margin: 0;
+ font-size: 14px;
+ line-height: 1.8;
+ color: #4A1A2C;
+ text-align: justify}
 
-/* TITOLI */
-.ucla-title{margin:0 0 18px;padding:12px 18px;background:#773344;color:#F5E9E2;font:500 21px/1 'Bodoni Moda',serif;letter-spacing:2px;text-transform:uppercase;border-left:5px solid #D44D5C}
-.ucla-title small{float:right;color:#E3B5A4;font:700 8px Muli;letter-spacing:2px;margin-top:4px}
+.ucla-text b {color: #6B2236;
+ font-weight: 700}
 
-/* INTRO */
-.ucla-intro{padding:25px 30px;background:#F5E9E2}
-.ucla-intro h2{margin:0 0 8px;color:#773344;font:600 30px/1 'Bodoni Moda',serif;letter-spacing:1px}
-.ucla-intro h2 span{font:700 9px Muli;letter-spacing:3px;color:#D44D5C}
-.ucla-intro p,.ucla-text{font:13px/1.65 Muli;color:rgba(22,0,41,.72);text-align:justify;margin:8px 0}
+.ucla-li {display: block;
+ margin-bottom: 5px}
 
-/* DATI */
-.ucla-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:18px}
-.ucla-fact{padding:14px;background:#E3B5A4;text-align:center;color:#160029}
-.ucla-fact b{display:block;color:#773344;font:700 9px Muli;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
-.ucla-fact span{font:12px Muli}
+/*============ HERO============ */
+.ucla-hero {position: relative;
+ height: 280px;
+ overflow: hidden;
+ background: #1E050F;
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+ padding: 30px 40px;
+ color: #FFFFFF;
+ line-height: normal}
 
-/* SEZIONI */
-.ucla-section{padding:25px 30px}
-.ucla-section:nth-child(even){background:#fff}
-.ucla-section:nth-child(odd){background:#F5E9E2}
+.ucla-hero-img {position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ object-position: center;
+ border: 0;
+ z-index: 0}
 
-/* CAMPUS */
-.ucla-campus{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
-.ucla-campus-img{height:220px;background:url('https://i.imgur.com/03eYpX5.png') center/cover;border:7px solid #E3B5A4}
-.ucla-quote{padding:25px;background:#E3B5A4;color:#773344;font:italic 20px/1.4 'Bodoni Moda',serif;border-left:5px solid #D44D5C}
+.ucla-hero::before {content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(to right, rgba(30, 5, 15, 0.85), rgba(70, 20, 40, 0.6));
+ z-index: 1}
 
-/* EDIFICI */
-.ucla-buildings{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.ucla-card{background:#fff;border:1px solid #E3B5A4;border-radius:5px;overflow:hidden}
-.ucla-card-head{height:85px;background:url('https://i.imgur.com/03eYpX5.png') center/cover}
-.ucla-card-body{padding:13px}
-.ucla-card h3{margin:0 0 7px;color:#773344;font:700 13px Muli;text-transform:uppercase}
-.ucla-card p{margin:0;color:rgba(22,0,41,.68);font:11px/1.55 Muli}
+.ucla-hero::after {content: '';
+ position: absolute;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ height: 3px;
+ background: linear-gradient(to right, transparent, #C9A66B, transparent);
+ z-index: 3}
 
-/* STAGIONI */
-.ucla-seasons{display:grid;grid-template-columns:repeat(6,1fr);gap:7px}
-.ucla-season{padding:13px 8px;background:#fff;border:1px solid #E3B5A4;text-align:center}
-.ucla-season b{display:block;color:#773344;font:700 10px Muli;text-transform:uppercase;margin-bottom:7px}
-.ucla-season p{margin:0;color:#160029;font:10px/1.45 Muli}
+.ucla-hero-title,
+.ucla-hero-badge {position: relative;
+ z-index: 2}
 
-/* SEGRETI */
-.ucla-secrets{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.ucla-secret{padding:16px;background:#E3B5A4;border-left:4px solid #D44D5C}
-.ucla-secret h3{margin:0 0 7px;color:#773344;font:700 12px Muli;text-transform:uppercase}
-.ucla-secret p{margin:0;font:11px/1.55 Muli;color:#160029}
-.ucla-secret-wide{grid-column:span 3}
+.ucla-hero-title h1 {margin: 0;
+ font-family: 'Bodoni Moda', 'Playfair Display', serif;
+ font-size: 56px;
+ font-weight: 600;
+ letter-spacing: 2px;
+ line-height: 1;
+ color: #FFFFFF}
 
-/* FACOLTÀ */
-.ucla-faculties{display:grid;grid-template-columns:1fr 1fr;gap:9px}
-.ucla-faculty{padding:15px;background:#fff;border:1px solid #E3B5A4;border-left:5px solid #773344}
-.ucla-faculty h3{margin:0 0 9px;color:#773344;font:700 12px/1.2 Muli;text-transform:uppercase;letter-spacing:.5px}
-.ucla-faculty h3 span{color:#D44D5C}
-.ucla-course{margin:7px 0}
-.ucla-course b{display:block;color:#160029;font:700 11px Muli}
-.ucla-course p{margin:2px 0 0;color:rgba(22,0,41,.65);font:10px/1.4 Muli}
+.ucla-hero-title small {display: block;
+ margin-top: 10px;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 11px;
+ letter-spacing: 4px;
+ color: #F0D3C9;
+ font-weight: 500}
 
-/* FOOTER */
-.ucla-footer{padding:18px;background:#160029;color:#E3B5A4;text-align:center;font:italic 17px 'Bodoni Moda',serif;letter-spacing:1px}
-.ucla-footer small{display:block;margin-top:5px;color:#F5E9E2;font:700 8px Muli;letter-spacing:3px;text-transform:uppercase}
+.ucla-hero-badge {text-align: right;
+ font-family: 'bodoni moda', cursive;
+ font-size: 38px;
+ color: #F0D3C9;
+ line-height: 0.9}
 
-/* RESPONSIVE */
-@media(max-width:800px){
-.ucla-hero{height:230px;padding:22px}.ucla-hero h1{font-size:38px}
-.ucla-nav{flex-wrap:wrap}.ucla-nav a{flex:1 1 30%}
-.ucla-facts{grid-template-columns:1fr 1fr}
-.ucla-campus{grid-template-columns:1fr}
-.ucla-buildings{grid-template-columns:1fr 1fr}
-.ucla-seasons{grid-template-columns:repeat(2,1fr)}
-.ucla-secrets{grid-template-columns:1fr}
-.ucla-secret-wide{grid-column:auto}
-.ucla-faculties{grid-template-columns:1fr}
-.ucla-section,.ucla-intro{padding:20px}
-}
+.ucla-hero-badge small {display: block;
+ margin-top: 6px;
+ font-family: 'Righteous', sans-serif;
+ font-size: 11px;
+ letter-spacing: 3px;
+ color: #E6CBA0}
+
+/*============ NAV============ */
+.ucla-nav {display: flex;
+ gap: 8px;
+ padding: 14px 16px;
+ background: #4A1225;
+ border-bottom: 1px solid #C9A66B}
+
+.ucla-nav a {flex: 1;
+ padding: 13px 6px;
+ background: #7B283F;
+ color: #FFFFFF !important;
+ text-decoration: none !important;
+ text-align: center;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 10px;
+ font-weight: 600;
+ letter-spacing: 1px;
+ border-radius: 4px;
+ border: 1px solid rgba(201, 166, 107, 0.35);
+ transition: background 0.25s, border-color 0.25s;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 7px}
+
+.ucla-nav a:hover {background: #9E3854;
+ border-color: #C9A66B}
+
+.ucla-nav a i {color: #E6CBA0}
+
+/*============ INTRO============ */
+.ucla-intro {padding: 34px 40px 14px;
+ background: #FFF5EF;
+ text-align: center}
+
+.ucla-intro h2 {margin: 0;
+ font-family: 'righteous', serif;
+ font-size: 64px;
+ font-weight: 600;
+ letter-spacing: 6px;
+ color: #5C1D30;
+ line-height: 1}
+
+.ucla-subheading {display: block;
+ max-width: 560px;
+ margin: 12px auto 20px;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 11px;
+ letter-spacing: 4px;
+ color: #8C3A52;
+ font-weight: 600;
+ border-top: 1px solid #C9A66B;
+ border-bottom: 1px solid #C9A66B;
+ padding: 9px 0}
+
+.ucla-intro .ucla-text {max-width: 760px;
+ margin: 0 auto;
+ text-align: center;
+ font-size: 15px}
+
+/* ---- Fact boxes ---- */
+.ucla-facts {display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 14px;
+ margin-top: 28px}
+
+.ucla-fact {background: #FFFFFF;
+ padding: 20px 45px 10px;
+ border-radius: 6px;
+ border: 1px solid #E3C9BC;
+ border-top: 3px solid #6B2236;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ text-align: center;
+ gap: 6px;
+ min-height: 140px;
+ box-shadow: 0 3px 10px rgba(74, 26, 44, 0.07)}
+
+.ucla-fact i {width: 42px;
+ height: 42px;
+ line-height: 42px;
+ border-radius: 50%;
+ background: #6B2236;
+ color: #F0D3C9;
+ font-size: 17px;
+ text-align: center;
+ margin-bottom: 4px}
+
+.ucla-fact b {display: block;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 10px;
+ letter-spacing: 2px;
+ color: #8C3A52;
+ font-weight: 700}
+
+.ucla-fact span {display: block;
+ font-family: 'Bodoni Moda', serif;
+ font-size: 16px;
+ line-height: 1.35;
+ color: #4A1A2C;
+ font-weight: 600}
+
+/*============ SECTIONS============ */
+.ucla-section {padding: 22px 30px}
+
+.ucla-title {background: linear-gradient(to right, #5C1D30, #7B283F);
+ color: #FFFFFF;
+ padding: 13px 18px;
+ border-radius: 4px;
+ border-left: 4px solid #C9A66B;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ font-family: 'Bodoni Moda', serif;
+ font-size: 20px;
+ letter-spacing: 1px;
+ margin-bottom: 20px}
+
+.ucla-title i {margin-right: 10px;
+ color: #E6CBA0}
+
+.ucla-title small {font-family: 'Montserrat', sans-serif;
+ font-size: 9px;
+ letter-spacing: 2px;
+ color: #F0D3C9;
+ font-weight: 500;
+ text-align: right}
+
+.ucla-title small i {margin: 0 0 0 6px}
+
+/* ---- Campus / Struttura(no images, text only) ---- */
+.ucla-campus,
+.ucla-structured {display: block;
+ background: #FFFFFF;
+ border: 1px solid #E3C9BC;
+ border-radius: 6px;
+ padding: 24px 28px;
+ position: relative}
+
+.ucla-campus::before,
+.ucla-structured::before {content: '';
+ position: absolute;
+ left: 0;
+ top: 18px;
+ bottom: 18px;
+ width: 3px;
+ background: #C9A66B}
+
+.ucla-quote {margin: 20px 0 0;
+ padding: 16px 22px;
+ background: #F6EBE4;
+ border-left: 4px solid #8C3A52;
+ border-radius: 0 4px 4px 0;
+ font-family: 'Bodoni Moda', serif;
+ font-style: italic;
+ font-size: 17px;
+ line-height: 1.5;
+ color: #5C1D30}
+
+.ucla-quote-author {display: block;
+ text-align: right;
+ margin-top: 8px;
+ font-family: 'Montserrat', sans-serif;
+ font-style: normal;
+ font-size: 10px;
+ letter-spacing: 3px;
+ font-weight: 700;
+ color: #8C3A52}
+
+/*============ BUILDINGS============ */
+.ucla-buildings {display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 14px}
+
+.ucla-card {background: #FFFFFF;
+ border-radius: 6px;
+ overflow: hidden;
+ border: 1px solid #E3C9BC;
+ box-shadow: 0 3px 10px rgba(74, 26, 44, 0.08);
+ display: flex;
+ flex-direction: column}
+
+.ucla-card-head {position: relative;
+ height: 150px;
+ overflow: visible;
+ line-height: 0}
+
+.ucla-card-head img {display: block;
+ width: 100%;
+ height: 150px;
+ object-fit: cover;
+ object-position: center;
+ border: 0}
+
+.ucla-card-icon {position: absolute;
+ bottom: -16px;
+ right: 14px;
+ width: 32px;
+ height: 32px;
+ background: #6B2236;
+ color: #F0D3C9;
+ border: 2px solid #C9A66B;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 12px;
+ line-height: 1}
+
+.ucla-card-body {padding: 24px 14px 16px;
+ flex: 1}
+
+.ucla-card h3 {margin: 0 0 8px;
+ font-family: 'Bodoni Moda', serif;
+ font-size: 14px;
+ letter-spacing: 0;
+ color: #6B2236;
+ font-weight: 700}
+
+.ucla-card p {margin: 0;
+ font-size: 12px;
+ line-height: 1.6;
+ color: #5A3A44}
+
+/*============ SEASONS============ */
+.ucla-seasons {display: grid;
+ grid-template-columns: repeat(6, 1fr);
+ gap: 10px}
+
+.ucla-season {background: #FFFFFF;
+ padding: 20px 8px 18px;
+ text-align: center;
+ border-radius: 6px;
+ border: 1px solid #E3C9BC;
+ border-bottom: 3px solid #8C3A52}
+
+.season-icon {display: block;
+ width: 62px;
+ height: 62px;
+ line-height: 62px;
+ margin: 0 auto 12px;
+ border-radius: 50%;
+ background: linear-gradient(135deg, #7B283F, #5C1D30);
+ border: 2px solid #C9A66B;
+ color: #F0D3C9;
+ font-size: 26px;
+ text-align: center}
+
+.ucla-season b {display: block;
+ font-family: 'Righteous', sans-serif;
+ font-size: 13px;
+ font-weight: 400;
+ letter-spacing: 1px;
+ color: #6B2236;
+ margin-bottom: 6px}
+
+.ucla-season p {margin: 0;
+ font-size: 12px;
+ line-height: 1.5;
+ color: #4A1A2C}
+
+/*============ ANNI ACCADEMICI============ */
+.ucla-years {display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 12px}
+
+.ucla-year {background: #FFFFFF;
+ border: 1px solid #E3C9BC;
+ border-radius: 6px;
+ padding: 18px 14px 16px;
+ text-align: center;
+ position: relative;
+ overflow: hidden}
+
+.ucla-year::before {content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ height: 4px;
+ background: linear-gradient(to right, #6B2236, #C9A66B)}
+
+.ucla-year-num {display: block;
+ font-family: 'Righteous', sans-serif;
+ font-size: 46px;
+ line-height: 1;
+ color: #8C3A52;
+ margin-bottom: 4px}
+
+.ucla-year h3 {margin: 0;
+ font-family: 'Bodoni Moda', serif;
+ font-size: 20px;
+ color: #5C1D30;
+ font-weight: 700}
+
+.ucla-year-it {display: block;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 9px;
+ letter-spacing: 2px;
+ color: #8C3A52;
+ font-weight: 600;
+ margin: 4px 0 12px}
+
+.ucla-year-units {display: inline-block;
+ background: #6B2236;
+ color: #F0D3C9;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 10px;
+ font-weight: 600;
+ letter-spacing: 1px;
+ padding: 5px 12px;
+ border-radius: 20px;
+ margin-bottom: 12px}
+
+.ucla-year p {margin: 0;
+ font-size: 12px;
+ line-height: 1.6;
+ color: #5A3A44}
+
+.ucla-year-class {display: block;
+ margin-top: 12px;
+ padding-top: 10px;
+ border-top: 1px dashed #D8B2A6;
+ font-family: 'Righteous', sans-serif;
+ font-size: 13px;
+ color: #6B2236;
+ letter-spacing: 1px}
+
+.ucla-acad-info {display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 12px;
+ margin-top: 14px}
+
+.ucla-acad-box {background: #E8D0C5;
+ border-radius: 6px;
+ padding: 14px 12px;
+ text-align: center}
+
+.ucla-acad-box i {display: block;
+ font-size: 20px;
+ color: #6B2236;
+ margin-bottom: 8px}
+
+.ucla-acad-box b {display: block;
+ font-family: 'Righteous', sans-serif;
+ font-weight: 400;
+ font-size: 13px;
+ letter-spacing: 1px;
+ color: #6B2236;
+ margin-bottom: 4px}
+
+.ucla-acad-box span {display: block;
+ font-size: 11px;
+ line-height: 1.5;
+ color: #4A1A2C}
+
+.ucla-subtitle {margin: 22px 0 12px;
+ text-align: center;
+ font-family: 'Bodoni Moda', serif;
+ font-size: 18px;
+ font-style: italic;
+ color: #5C1D30;
+ border-bottom: 1px solid #D8B2A6;
+ padding-bottom: 8px}
+
+.ucla-grad {display: grid;
+ grid-template-columns: repeat(5, 1fr);
+ gap: 10px}
+
+.ucla-grad-item {background: #FFFFFF;
+ border: 1px solid #E3C9BC;
+ border-radius: 6px;
+ padding: 14px 8px;
+ text-align: center}
+
+.ucla-grad-item b {display: block;
+ font-family: 'Righteous', sans-serif;
+ font-weight: 400;
+ font-size: 13px;
+ color: #6B2236;
+ letter-spacing: 1px;
+ margin-bottom: 4px}
+
+.ucla-grad-item span {display: block;
+ font-size: 11px;
+ line-height: 1.45;
+ color: #5A3A44}
+
+.ucla-grad-item em {display: block;
+ margin-top: 6px;
+ font-family: 'Montserrat', sans-serif;
+ font-style: normal;
+ font-size: 10px;
+ font-weight: 700;
+ letter-spacing: 1px;
+ color: #8C3A52}
+
+.ucla-note {margin-top: 16px;
+ padding: 14px 18px;
+ background: #FFFFFF;
+ border-left: 4px solid #C9A66B;
+ border-radius: 0 4px 4px 0;
+ font-size: 12px;
+ line-height: 1.7;
+ color: #4A1A2C}
+
+.ucla-note i {color: #8C3A52;
+ margin-right: 6px}
+
+/*============ FACOLTA============ */
+.ucla-faculties-grid {display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 14px}
+
+.ucla-faculty-card {background: #FFFFFF;
+ padding: 16px 14px;
+ border-radius: 6px;
+ border: 1px solid #E3C9BC;
+ border-left: 4px solid #8C3A52;
+ box-shadow: 0 2px 8px rgba(74, 26, 44, 0.06);
+ display: flex;
+ gap: 12px;
+ align-items: flex-start;
+ transition: transform 0.2s, box-shadow 0.2s}
+
+.ucla-faculty-card:hover {transform: translatey(-2px);
+ box-shadow: 0 6px 14px rgba(74, 26, 44, 0.14)}
+
+.ucla-faculty-icon {width: 38px;
+ height: 38px;
+ background: linear-gradient(135deg, #7B283F, #5C1D30);
+ color: #F0D3C9;
+ border: 1px solid #C9A66B;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 15px;
+ flex-shrink: 0}
+
+.ucla-faculty-info h3 {margin: 0 0 8px;
+ padding-bottom: 6px;
+ border-bottom: 1px solid #E3C9BC;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 10px;
+ letter-spacing: 1px;
+ color: #6B2236;
+ font-weight: 700}
+
+.ucla-faculty-info p {margin: 0;
+ font-size: 11px;
+ line-height: 1.5;
+ color: #4A1A2C}
+
+.ucla-faculty-info p b {color: #8C3A52}
