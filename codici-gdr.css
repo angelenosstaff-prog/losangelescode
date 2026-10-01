@@ -1,4 +1,4 @@
-<style>/* ATTIVITA' SCOLASTICHE E SQUADRE */
+/* ATTIVITA' SCOLASTICHE E SQUADRE */
 .school-box{width:100%;padding:0;background:#1A0A24;border-radius:14px;overflow:hidden;box-sizing:border-box;font-family:Montserrat,Arial,sans-serif;color:#3A2230}
 .school-inner{width:100%;padding:0 0 24px;background:#1A0A24;box-sizing:border-box}
 
@@ -146,4 +146,3 @@ margin:0 0 24px !important;padding:0 !important;box-sizing:border-box !important
 .ucla-faculties{grid-template-columns:1fr}
 .ucla-section,.ucla-intro{padding:20px}
 }
-</style>
