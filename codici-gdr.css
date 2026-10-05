@@ -1,22 +1,22 @@
 /* ATTIVITA' SCOLASTICHE E SQUADRE */
-.school-box{width:100%;padding:0;background:#1A0A24;border-radius:14px;overflow:hidden;box-sizing:border-box;font-family:Montserrat,Arial,sans-serif;color:#3A2230}
+.school-box{width:100%;padding:0;background:#1A0A24;border-radius:14px;overflow:hidden;box-sizing:border-box;font-family:muli;color:#3A2230}
 .school-inner{width:100%;padding:0 0 24px;background:#1A0A24;box-sizing:border-box}
  
 /* HEADER */
 .school-header{position:relative;min-height:230px;padding:55px 50px 40px;background:url('https://i.imgur.com/FkxLwzp.png') center/cover no-repeat;box-sizing:border-box}
 .school-header-title{margin:0;color:#F6E6E0;font:500 clamp(42px,7vw,78px)/.95 'Bodoni Moda',serif;letter-spacing:.01em}
-.school-header-subtitle{margin-top:8px;color:#F6E6E0;font:300 clamp(20px,3vw,34px)/1 Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase}
+.school-header-subtitle{margin-top:8px;color:#F6E6E0;font:300 clamp(20px,3vw,34px)/1 muli;letter-spacing:.18em;text-transform:uppercase}
 .school-header-line{width:55%;height:1px;margin:18px 0 10px;background:#E8B4B0}
-.school-header-text{color:#F6E6E0;font:500 11px/1.5 Montserrat,sans-serif;letter-spacing:.28em;text-transform:uppercase}
+.school-header-text{color:#F6E6E0;font:500 11px/1.5 Muli;letter-spacing:.28em;text-transform:uppercase}
 
 /* CONTENITORE */
 .school-content{margin:20px;padding:16px;background:#F6E6E0;border-radius:12px;box-sizing:border-box}
 
 /* INTRO */
 .school-intro{padding:18px 20px;background:#FFF7F3;border-radius:10px;margin-bottom:14px;box-sizing:border-box}
-.school-intro-text{font:14px/1.5 Montserrat,Arial,sans-serif;color:#3A2230}
+.school-intro-text{font:14px/1.5 Muli;color:#3A2230}
 .school-intro-text strong{font-weight:700}
-.school-highlight{margin-top:14px;padding:12px 15px;background:#F3D9D8;border-radius:8px;color:#3A2230;font:600 13px/1.5 Montserrat,Arial,sans-serif}
+.school-highlight{margin-top:14px;padding:12px 15px;background:#F3D9D8;border-radius:8px;color:#3A2230;font:600 13px/1.5 muli}
 .school-highlight-text{margin-top:4px;font-weight:400}
 
 /* TITOLI SEZIONE */
@@ -25,7 +25,7 @@
 .school-section-name{white-space:nowrap}
 
 /* DESCRIZIONE SEZIONE */
-.school-section-info{padding:14px 18px;margin-bottom:16px;background:#F3D9D8;border-radius:9px;color:#3A2230;font:13px/1.5 Montserrat,Arial,sans-serif}
+.school-section-info{padding:14px 18px;margin-bottom:16px;background:#F3D9D8;border-radius:9px;color:#3A2230;font:13px/1.5 Muli}
 
 
 /* GRIGLIA CLUB */
@@ -37,7 +37,7 @@ margin:0 0 24px !important;padding:0 !important;box-sizing:border-box !important
 /* MODULO */
 .school-form{margin-top:20px;padding:18px;background:#2A1030;border-radius:10px;color:#F6E6E0}
 .school-form-title{margin-bottom:12px;color:#E8B4B0;font:500 26px/1.1 'Cormorant Garamond',serif;text-transform:uppercase}
-.school-form-list{padding:14px;background:#F6E6E0;border-radius:8px;color:#3A2230;font:12px/1.6 Montserrat,Arial,sans-serif}
+.school-form-list{padding:14px;background:#F6E6E0;border-radius:8px;color:#3A2230;font:12px/1.6 Muli}
 .school-form-item{display:block;margin-bottom:3px}
 .school-form-item strong{font-weight:700}
 
